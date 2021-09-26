@@ -1,1 +1,3 @@
-# infokiosk_polotsk
+# infokiosk
+
+Тута будет мануал по проге
