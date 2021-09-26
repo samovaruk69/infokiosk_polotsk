@@ -1,0 +1,1 @@
+# infokiosk_polotsk
