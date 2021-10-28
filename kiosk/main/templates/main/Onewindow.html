@@ -1,37 +1,23 @@
 {%extends 'main/Shell.html'%}
 {%block head%}Информация по заявительному принципу одно окно{%endblock%}
-
-{%block topbar%}
-<div class="topbar">
-    <table>
-        <tr>
-            <td height="20vh"><a class="back" href="{%url 'home'%}">Назад</a></td>
-            <td><a class="toptext">Информация по заявительному принципу "Одно окно"</a></td>
-        </tr>
-    </table>
-
-</div>
-{%endblock%}
-
+{%block topbar%}Информация по заявительному принципу одно окно{%endblock%}
 
 {%block body%}
-<div class="Onewindow_main_table_position">
-<table class="Onewindow_table" cellspacing="20vh">
+            <table class="Onewindow_table" cellspacing="19vh">
     <tr>
-        <td><a href="{%url 'Leadership'%}" class="button_table">Структура руководства</a></td>
-        <td><a href="{%url 'list_of_normative_documents'%}" class="button_table">Перечень нормативных документов</a></td>
-        <td><a href="{%url 'WorkAndMeeting'%}" class="button_table">Режим работы и график приема граждан</a></td>
+        <td><a href="{%url 'Leadership'%}"><button class="button_right_block">Структура руководства</button></a></td>
+        <td><a href="{%url 'list_of_normative_documents'%}"><button class="button_right_block">Перечень нормативных документов</button></a></td>
+        <td><a href="{%url 'WorkAndMeeting'%}"><button class="button_right_block">Режим работы и график приема граждан</button></a></td>
     </tr>
     <tr>
-        <td><a href="{%url 'ProceduresOneWindow'%}" class="button_table">Перечни административных процедур, осуществляемых ПУ "Полоцкгаз" по заявлениям граждан</a></td>
-        <td><a href="{%url 'Forms'%}" class="button_table">Формы(бланки) документов необходимых для обращения за осуществлением адинистративных процедур</a></td>
-        <td><a href="{%url 'RightsAndObligations'%}" class="button_table">Права и обязанности граждан при осуществлении администартивных процедур</a></td>
+        <td><a href="{%url 'ProceduresOneWindow'%}"><button class="button_right_block">Перечни административных процедур, осуществляемых ПУ "Полоцкгаз" по заявлениям граждан</button></a></td>
+        <td><a href="{%url 'Forms'%}"><button class="button_right_block">Формы(бланки) документов необходимых для обращения за осуществлением адинистративных процедур</button></a></td>
+        <td><a href="{%url 'RightsAndObligations'%}"><button class="button_right_block">Права и обязанности граждан при осуществлении администартивных процедур</button></a></td>
     </tr>
     <tr>
-        <td><a href="{%url 'claimbook'%}" class="button_table">Книга замечаний и предложений</a></td>
-        <td><a href="{%url 'timelimitsforappeal'%}" class="button_table">Порядок и сроки обжалования принятых административных решений</a></td>
-        <td><a href="{%url 'belarusbank'%}" class="button_table">Ближайшие банковские учреждения, расчетные счета</a></td>
+        <td><a href="{%url 'claimbook'%}"><button class="button_right_block">Книга замечаний и предложений</button></a></td>
+        <td><a href="{%url 'timelimitsforappeal'%}"><button class="button_right_block">Порядок и сроки обжалования принятых административных решений</button></a></td>
+        <td><a href="{%url 'belarusbank'%}"><button class="button_right_block">Ближайшие банковские учреждения, расчетные счета</button></a></td>
     </tr>
 </table>
-</div>
 {%endblock%}

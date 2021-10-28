@@ -195,3 +195,6 @@ def Other_home(request):
 def Services_home(request):
     data = Services.objects.all()
     return render(request,'main/Services.html', {'data': data})
+
+def Quiz_home(request):
+    return render(request,'main/onewindow/Quiz.html')

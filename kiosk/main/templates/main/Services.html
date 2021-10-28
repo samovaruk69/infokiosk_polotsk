@@ -1,24 +1,120 @@
 {%extends 'main/Shell.html'%}
 {%block head%}Услуги оказываемые населению{%endblock%}
+{%block topbar%}Услуги оказываемые населению{%endblock%}
 
-{%block topbar%}
-<div class="topbar">
-    <table>
-        <tr>
-            <td height="20vh"><a class="back" href="{%url 'home'%}">Назад</a></td>
-            <td><a class="toptext">Услуги оказываемые населению</a></td>
-        </tr>
-    </table>
-
-</div>
-{%endblock%}
 
 {%block body%}
-{%for el in data%}
+            <table class="Onewindow_table" cellspacing="19vh">
+    <tr>
+        <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+        <td>
+            <div class="card">
+            <div class="front"><span>Паша1</span></div>
+            <div class="back1"><span>Крут1</span></div>
+                </div>
+        </td>
+                <td>
+            <div class="card">
+            <div class="front"><span>Паша2</span></div>
+            <div class="back1"><span>Крут2</span></div>
+                </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+                <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+                <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
 
-        <div class="botton_color">
-                <embed class="docs_view" src="{{ el.Services_doc.url }}" >
-                <p href="{{ el.Services}}" class="cool_text">{{ el.title }} {{el.times}}</p>
-        </div>
-{%endfor%}
+
+    </tr>
+    <tr>
+        <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+                <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+                <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+
+
+    </tr>
+    <tr>
+        <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+                <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+                <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+
+
+    </tr>
+                    <tr>
+        <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+                <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+                <td>
+            <div class="card">
+            <div class="front"><span>Паша</span></div>
+            <div class="back1"><span>Крут</span></div>
+                </div>
+        </td>
+
+
+    </tr>
+
+</table>
+
+
 {%endblock%}

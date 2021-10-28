@@ -7,16 +7,47 @@
         {%block head%}
         {%endblock%}
     </title>
-    <link rel="stylesheet" href="/static/main/css/Shell.css">
+    <link rel="stylesheet" href="{% static 'main/css/Shell.css' %}">
+
 </head>
 
 <body class="main">
-{%block topbar%}
 
-{%endblock%}
+<div class="topbar">
+    <table border="1px">
+        <tr>
+            <td class="top_left_block"><a href="{%url 'home'%}"><img src="{% static 'main/img/logo.png' %}" class="back" ></img></a></td>
+            <td class="top_right_block"><a class="toptext">{%block topbar%}{%endblock%}</a></td>
+        </tr>
+    </table>
+
+</div>
 
 
-{%block body%}
-{%endblock%}
+
+<div class="Onewindow_main_table_position">
+
+    <table border="1px">
+        <td class="left_block">
+
+    <ul>
+        <li class="list"><a href="{%url 'home'%}"><button class="button_left_block">Инфокиоск</button></a></li>
+        <li class="list"><a href="{%url 'Services'%}"><button class="button_left_block">Услуги,оказываемые населению</button></a></li>
+        <li class="list"><a href="{%url 'onewindow'%}"><button class="button_left_block">Информация по заявительному принципу "Одно окно"</button></a></li>
+        <li class="list"><a href="{%url 'price'%}"><button class="button_left_block">Тарифы на природный и сжиженный газ</button></a></li>
+        <li class="list"><a href="{%url 'Videos'%}"><button class="button_left_block">Просмотр инструктажей</button></a></li>
+        <li class="list"><a href="{%url 'Quiz'%}"><button class="button_left_block">Тест</button></a></li>
+
+
+    </ul>
+
+        </td>
+        <td class="right_block">
+            {%block body%}
+            {%endblock%}
+        </td>
+    </table>
+
+</div>
 </body>
 </html>

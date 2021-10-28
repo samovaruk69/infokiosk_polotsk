@@ -54,6 +54,8 @@ urlpatterns = [
     path('onewindow/list_of_normative_documents/Decree', views.Decree_home, name='Decree'),
     path('onewindow/list_of_normative_documents/Other', views.Other_home, name='Other'),
 
+    path('onewindow/Other', views.Quiz_home, name='Quiz'),
+
 ]
 
 if settings.DEBUG:
