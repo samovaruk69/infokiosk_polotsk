@@ -167,6 +167,7 @@
 }
 
 
+
 .card {
   position: relative;
   perspective: 1000px;
@@ -205,10 +206,6 @@
 }
 .card:hover .front {transform: rotateY(180deg);}
 .card:hover .back1 {transform: rotateY(360deg);}
-
-
-
-
 
 
 
