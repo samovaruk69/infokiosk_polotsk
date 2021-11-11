@@ -208,7 +208,12 @@
 .card:hover .back1 {transform: rotateY(360deg);}
 
 
-
+.Onewindow_table_leader{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 7.4em 0.4em;
+}
 
 
 

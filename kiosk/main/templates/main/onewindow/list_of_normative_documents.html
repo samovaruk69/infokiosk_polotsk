@@ -1,33 +1,21 @@
 {%extends 'main/Shell.html'%}
-
 {%block head%}Перечень нормативных документов{%endblock%}
-{%block topbar%}
-<div class="topbar">
-    <table>
-        <tr>
-            <td height="20vh"><a class="back" href="{%url 'onewindow'%}">Назад</a></td>
-            <td><a class="toptext">Перечень нормативных документов</a></td>
-        </tr>
-    </table>
-
-</div>
-{%endblock%}
+{%block topbar%}Перечень нормативных документов{%endblock%}
 
 {%block body%}
-<center>
-<div class="Onewindow_main_table_position">
-<table class="Onewindow_table" cellspacing="10vh">
+            <table class="Onewindow_table" cellspacing="19vh">
     <tr>
-        <td><a href="{%url 'Command'%}" class="button_table_list">Приказы</a></td>
-        <td><a href="{%url 'Order'%}" class="button_table_list">Распоряжения</a></td>
-        <td><a href="{%url 'Law'%}" class="button_table_list">Законы</a></td>
+        <td><a href="{%url 'Command'%}"><button class="button_right_block">Приказы</button></a></td>
+        <td><a href="{%url 'Order'%}"><button class="button_right_block">Распоряжения</button></a></td>
+        <td><a href="{%url 'Law'%}"><button class="button_right_block">Законы</button></a></td>
     </tr>
     <tr>
-        <td><a href="{%url 'Directive'%}" class="button_table_list">Директивы</a></td>
-        <td><a href="{%url 'Ruling'%}" class="button_table_list">Постановления</a></td>
-        <td><a href="{%url 'Decree'%}" class="button_table_list">Декреты</a></td>
+        <td><a href="{%url 'Directive'%}"><button class="button_right_block">Директивы</button></a></td>
+        <td><a href="{%url 'Ruling'%}"><button class="button_right_block">Постановления</button></a></td>
+        <td><a href="{%url 'Decree'%}"><button class="button_right_block">Декреты</button></a></td>
+    </tr>
+    <tr>
+        <td><a href="{%url 'Propaganda'%}"><button class="button_right_block">Пропаганда</button></a></td>
     </tr>
 </table>
-    </div>
-    </center>
 {%endblock%}

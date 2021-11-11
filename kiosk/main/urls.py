@@ -53,6 +53,7 @@ urlpatterns = [
     path('onewindow/list_of_normative_documents/Ruling', views.Ruling_home, name='Ruling'),
     path('onewindow/list_of_normative_documents/Decree', views.Decree_home, name='Decree'),
     path('onewindow/list_of_normative_documents/Other', views.Other_home, name='Other'),
+    path('onewindow/list_of_normative_documents/Propaganda', views.Propaganda_home, name='Propaganda'),
 
     path('onewindow/Other', views.Quiz_home, name='Quiz'),
 

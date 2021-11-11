@@ -325,3 +325,11 @@ class Services(models.Model):
 
     def __str__(self):
         return self.title
+
+class Propaganda(models.Model):
+    title = models.CharField(max_length=150)
+    Propaganda_photo = models.FileField(upload_to='Propaganda/')
+    times = models.DateField()
+
+    def __str__(self):
+        return self.title

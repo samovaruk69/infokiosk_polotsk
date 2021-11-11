@@ -1,0 +1,10 @@
+{%extends 'main/Shell.html'%}
+{%block head%}Пропаганда{%endblock%}
+{%block topbar%}Пропаганда{%endblock%}
+
+{%block body%}
+{%for el in data%}
+                <img class="photo" src="{{ el.Propaganda_photo.url }}" >
+                <p href="{{ el.Propaganda}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+{%endfor%}
+{%endblock%}
