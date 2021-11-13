@@ -203,6 +203,8 @@
   background-color: #444444;
   transform: rotateY(180deg);
   color:    #fff;
+  font-size:    2vh;
+  text-align:   center;
 }
 .card:hover .front {transform: rotateY(180deg);}
 .card:hover .back1 {transform: rotateY(360deg);}
