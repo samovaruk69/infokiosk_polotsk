@@ -4,7 +4,8 @@
 
 {%block body%}
 {%for el in data%}
-                <p href="{{ el.Other}}" class="names">{{ el.title }} {{el.times}}</p>
                 <embed class="docs_view" src="{{ el.Other_doc.url }}">
+                <p href="{{ el.Other}}" class="cool_text">{{ el.title }} {{el.times}}</p>
+
 {%endfor%}
 {%endblock%}
